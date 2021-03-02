@@ -25,7 +25,10 @@ db.User.find({ name: 'Bobby'}, (err, response)=> {
 //     console.log(newUser)
 // })
 
-// db.User.updateOne({ name: 'Bobby'}, { email: 'this is boby email'})
+// db.User.updateOne({ name: 'Bobby'}, { email: 'this is boby email'}, (err, updatedUser)=> {
+//     if (err) console.log(err)
+//     console.log(updatedUser)
+// })
 
 // updates all matching documents
 // db.User.updateOne({ name: 'Bobby' }, { meta: { age: 1000 } }, function(err, user) {
